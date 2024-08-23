@@ -1,0 +1,114 @@
+@import '../../../responsive.scss';
+
+.contact-head {
+    color: white;
+    padding-bottom: 1%;
+}
+.contact-cell {
+    margin-bottom: 25px;
+    position: relative;
+}
+label {
+    display: inline-block;
+}
+.contact-field {
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    line-height: 50px;
+    border: 1px solid #eee;
+    margin-top: 4px ;
+    border-radius: 5px;
+}
+.contact-msg {
+    width: 100%;
+    height: 70px;
+    padding: 0 20px;
+    line-height: 50px;
+    border: 1px solid #eee;
+    margin-top: 5px ;
+    border-radius: 5px;
+    &:hover {
+        border: 1px solid #eee!important;
+    }
+}
+.Contact {
+    background-color: black;
+    width: 100%;
+    // margin: 60px 0 0;
+    padding: 60px 45px 0 45px;
+    display: flex;
+    flex-direction: column;
+    @include respond-to(mobile-small) {
+        padding: 60px 24px;
+    }
+    &-heading {
+        display: flex;
+        align-items: center;
+    }
+}
+.container-contact {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    @include respond-to(tablet-mini) {
+        flex-direction: column;
+    }
+}
+.contact {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    @include respond-to(tablet-mini) {
+        width: 100%;
+    }
+}
+.abt-heading {
+    color: aliceblue;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.contact p {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 30px;
+    color: #adadad;
+    margin: 15px 0 2px;
+}
+.contact-div {
+    display: flex;    
+}
+.phone {
+    color: white;
+    font-size: 23px;
+    margin-top: 10px;
+}
+.mail {
+    color: #1c5264;
+    font-style: italic;
+    cursor: pointer;
+    font-weight: 600;
+    &:hover {
+        color: #fff;
+    }
+}
+
+.main-container {
+    color: white;
+    float: right;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    @include respond-to(tablet-mini) {
+        width: 100%;
+     }
+}
+.main-container h2 {
+    @include respond-to(tablet-mini) {
+       font-size: 32px;
+       margin-bottom: 15px;
+     }
+}

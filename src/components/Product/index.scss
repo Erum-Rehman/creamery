@@ -1,0 +1,124 @@
+@import '../../../responsive.scss';
+
+.body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product_heading {
+    font-family: emoji;
+    text-align: center;
+    margin: 1% 0 4%;
+    font-weight: 600;
+}
+.projects-image {
+    width: 120px;
+    height: 100px;
+    border-radius: 10px;
+}
+.project-item {
+    display: flex;
+    width: 48%;
+    margin: 0 2% 0 0%;
+    border-radius: 10px;
+    padding-bottom: 25px;
+    margin-bottom: 26px;
+    height: auto;
+    border: 1px solid rgba(204, 204, 204, 0.4392156863);
+    text-align: center;
+    align-items: center;
+    padding: 20px 8px 20px 23px;
+    cursor: pointer;
+    // &:hover {
+    //     background-color: #cccccc70;
+    // }
+}
+.title {
+    font-family: unset;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.project-name {
+    // text-align: justify;
+    margin-left: 4%;
+    // width: 29%;
+    display: flex;
+    flex-direction: column;
+    // align-items: flex-start;
+}
+.p_heading {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 0px!important;
+    color: #adadad;
+
+} 
+.addbtndiv {
+    display: flex;
+    justify-content: space-between;
+}
+.addtocart {
+    &:hover{
+        border: 1px solid palevioletred;
+        background-color: palevioletred;
+        color: white;
+    }
+}
+.products {
+    margin: 10px auto;
+    height: auto;
+    width: 17em;
+    text-align: center;
+    align-items: center;
+    padding: 5px 24px 30px;
+}
+.product-title {
+    margin: 15px 0 10px;
+    font-size: 14px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+.product-img {
+    width: 100%;
+    object-fit: cover;
+}
+.product-img img {
+    width: 246px!important;
+    height: 242px!important;
+}
+.product-rating {
+    margin: 0 60px;
+}
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+}
+.product-butn {
+    margin: 13px auto 10px;
+    height: 45px;
+    width: 174px;
+    font-size: 18px;
+    border-radius: 50px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #00896f;
+    color: #00896f;
+    text-decoration: none;
+    &:hover {
+        background-color: #00896f;
+        color: #fff;
+        font-weight: 500;
+    }
+}
+.price {
+    font-size: 12px;
+    color: #adadad;
+}
+// .product_incdec {
+//     width: 60%;
+//     display: inline-block;
+//     margin-top: 19px;
+// }

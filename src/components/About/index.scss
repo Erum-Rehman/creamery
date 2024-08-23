@@ -1,0 +1,127 @@
+@import '../../../responsive.scss';
+
+.about-container {
+    width: 85%;
+    display: flex;
+    margin: 45px auto 0 auto;
+    justify-content: space-between;
+    align-items: center;
+
+    @include respond-to(tablet) {
+        width: 93%;
+        margin: 100px 35px 0 35px
+    }
+
+    @include respond-to(tablet-mini) {
+        width: 76%;
+        margin: 100px auto 0;
+        flex-direction: column;
+    }
+
+    @include respond-to(mobile-small) {
+        width: 90%;
+    }
+}
+
+.about-img {
+    margin-left: 0;
+
+    @include respond-to(tablet) {
+        width: 52%;
+    }
+
+    @include respond-to(tablet-mini) {
+        width: 100%;
+    }
+
+    img {
+        border-radius: 15px;
+        width: 400px;
+
+        @include respond-to(tablet) {
+            width: 100%;
+        }
+    }
+}
+
+.about-para {
+    width: 52%;
+    // margin: 10px 0 0 45px;
+    // box-shadow: 4px 8px 30px rgba(141, 141, 141, 0.1);
+    padding: 15px;
+    // border-radius: 15px;
+    height: auto;
+
+    @include respond-to(tablet) {
+        margin: 10px 0 0 36px;
+    }
+
+    @include respond-to(tablet-mini) {
+        margin: 50px 0 0;
+        width: 100%;
+    }
+
+    .h3 {
+        font-size: 24px;
+        font-weight: 800;
+        font-family: manrope, sans-serif;
+        color: #00152b;
+        margin-bottom: 10px;
+        line-height: 45px;
+    }
+}
+
+.para-abt {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: work sans, sans-serif;
+    color: #848484;
+    line-height: 1.7;
+    padding-bottom: 30px;
+}
+
+.stp-img {
+    background: #fff;
+    border-radius: 5px;
+    padding: 13px;
+}
+
+.read-butn {
+    height: 48px;
+    width: 33%;
+    min-width: 11%;
+    font-size: 18px;
+    border-radius: 45px;
+    text-align: center;
+    background-color: orangered;
+    color: white;
+    padding: 10px 3px;
+    text-decoration: none;
+    font-weight: 500;
+    display: block;
+    margin: 35px 0 0;
+
+    @include respond-to(mobile-small) {
+        width: 50%;
+    }
+
+    &:hover {
+        color: orangered;
+        background-color: #fff;
+        border: 1px solid orangered;
+    }
+}
+
+
+.read-more {
+    color: #505050;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+        color: orangered;
+        text-decoration: underline;
+    }
+}
